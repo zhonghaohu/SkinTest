@@ -1,0 +1,5 @@
+include ':skin-build'
+include ':app'
+include ':android-support:skin-support'
+include ':calligraphy'
+rootProject.name = "My Application"
