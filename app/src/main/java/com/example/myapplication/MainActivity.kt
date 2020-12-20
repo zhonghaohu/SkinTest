@@ -10,7 +10,8 @@ import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper
 class MainActivity : FragmentActivity() {
 
     override fun attachBaseContext(newBase: Context?) {
-        super.attachBaseContext(CalligraphyContextWrapper(newBase))
+//        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase))//2.3.0使用
+        super.attachBaseContext(CalligraphyContextWrapper(newBase))//低版本使用
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -13,8 +13,6 @@ android {
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
-
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
@@ -44,8 +42,12 @@ dependencies {
     implementation "com.android.support:appcompat-v7:${rootProject.supportLibraryVersionInHost}"
     implementation "com.android.support:support-v4:${rootProject.supportLibraryVersionInHost}"
     implementation "com.android.support:support-annotations:${rootProject.supportLibraryVersionInHost}"
+    //插件化换肤库
     implementation project(":android-support:skin-support")
+    //低版本字体库（有问题）
     implementation project(":calligraphy")
+    //高版本字体库
+//    compile 'uk.co.chrisjenx:calligraphy:2.3.0'
 
 
 }
